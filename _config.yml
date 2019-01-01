@@ -1,1 +1,22 @@
-theme: jekyll-theme-cayman
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink: /:categories/:year/:month/:title/
+plugins: [jekyll-paginate]
+paginate: 5
+paginate_path: "page:num"
+
+# Setup
+title:               The SharePoint Farm
+description:         'Blah blah...'
+url:                 https://thesharepointfarm.github.io/
+baseurl:             ''
+paginate:            3
+
+# About/contact
+author:
+  name:              Trevor Seward
+  url:               https://github.com/Nauplius
+
+# Custom vars
+version:             1.0.0

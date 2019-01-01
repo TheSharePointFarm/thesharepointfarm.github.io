@@ -1,0 +1,59 @@
+- slug: ad-lds
+  name: AD LDS
+
+- slug: development
+  name: Development
+
+- slug: mim
+  name: Microsoft Identity Manager
+
+- slug: mss
+  name: Microsoft Search Server
+
+- slug: news
+  name: News
+
+- slug: office-365
+  name: Office 365
+
+- slug: oos
+  name: Office Online Server
+
+- slug: owa
+  name: Office Web Apps
+
+- slug: powerpivot
+  name: PowerPivot
+
+- slug: ps2010
+  name: Project Server 2010
+
+- slug: review
+  name: Review
+
+- slug: sp2007
+  name: SharePoint 2007
+
+- slug: sp2010
+  name: SharePoint 2010
+
+- slug: sp2013
+  name: SharePoint 2013
+
+- slug: sp2016
+  name: SharePoint 2016
+
+- slug: sp2019
+  name: SharePoint 2019
+
+- slug: spo
+  name: SharePoint Online
+
+- slug: vnext
+  name: SharePoint vNext
+
+- slug: ssrs
+  name: SQL Server Reporting Services
+
+- slug: sql
+  name: SQL Server

@@ -16,7 +16,7 @@ To remove the presence control entirely, open:
 
 Do a search for `ProcessImn`.  Once you find the below code, comment out both functions, so it reads like this:
 
-{% highlight js %}
+```js
 function ProcessImn()
 {
 //    if (EnsureIMNControl() && IMNControlObj.PresenceEnabled)
@@ -37,7 +37,7 @@ function ProcessImnMarkers()
 //    }
 //    setTimeout("ProcessImnMarkers()",imnMarkerBatchDelay);
 }
-{% endhighlight %}
+```
 
 Save the file and your guests will no longer see the Name ActiveX Control gold bar.  If you do not want this to apply globally (e.g. if you’re running a farm for both internal and anonymous usage), follow the instructions at Microsoft’s KB931509.
 

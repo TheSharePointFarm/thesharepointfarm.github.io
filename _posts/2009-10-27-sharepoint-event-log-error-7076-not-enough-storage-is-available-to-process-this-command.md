@@ -8,7 +8,7 @@ We received this message in our farm environment every 5 days after rebooting al
 
 These messages would repeat in the Application Event Log:
 
-{% highlight text %}
+```
 Event Type: Error
 Event Source: Office SharePoint Server
 Event Category: Office Server Shared Services
@@ -44,6 +44,6 @@ at Microsoft.SharePoint.AdministrationOperation.SPAdministrationOperation.DoProv
 at Microsoft.SharePoint.Administration.SPMetabaseManager.ProvisionIisApplicationPool(String name, Int32 identityType, String userName, SecureString password, TimeSpan idleTimeout, TimeSpan periodicRestartTime)
 at Microsoft.Office.Server.Administration.SharedWebServiceInstance.CreateSharedWebServiceApplicationPool(SharedResourceProvider srp)
 at Microsoft.Office.Server.Administration.ApplicationServerJob.ProvisionLocalSharedServiceInstances(Boolean isAdministrationServiceJob)
-{% endhighlight %}
+```
 
 The resolution was simple.  Uninstall .NET 3.0 and reinstall .NET 3.0 (or if you’re reinstalling, you can also go to .NET 3.5 SP1/the latest available version).

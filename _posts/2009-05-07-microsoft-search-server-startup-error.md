@@ -6,7 +6,7 @@ tags: [mss, sp2007]
 
 You may encounter this error in the Application Event Log after installing MSS(E) in your farm:
 
-{% highlight text %}
+```text
 Event Type:        Error
 Event Source:    Office SharePoint Server
 Event Category:                Office Server Shared Services
@@ -22,6 +22,6 @@ Reason: Access to the path 'C:\WINDOWS\system32\drivers\etc\HOSTS' is denied.
 
 Technical Support Details:
 System.UnauthorizedAccessException: Access to the path 'C:\WINDOWS\system32\drivers\etc\HOSTS' is denied.
-{% endhighlight %}
+```
 
 For what ever reason, Microsoft wanted Search Server to edit the HOSTS file on the MSS(E) server.  In order to resolve this error, provide the WPG_ADMIN group with Modify NTFS permissions to the `%windir%\System32\drivers\etc` directory.  If you restart the Search Server service, the error should not appear after making that modification.

@@ -18,7 +18,7 @@ For the query itself, you will want [Stramit SharePoint Caml Viewer](https://arc
 
 After getting the above information from Stramit Caml Viewer, create a text query like this:
 
-{% highlight xml %}
+```xml
 <Query>
 <Method Namespace="http://schemas.microsoft.com/sharepoint/soap/" Name="GetListItems">
 <Parameters>
@@ -31,7 +31,7 @@ After getting the above information from Stramit Caml Viewer, create a text quer
 <ElementPath IgnoreNamespaces="true">GetListItemsResponse/GetListItemsResult/listitems/data/row 
 {@ows_ID, @ows_Title}</ElementPath>
 </Query>
-{% endhighlight %}
+```
 
 The above query will pull the ID and Title field from the (un-) specified List and View.  You’ll note that the row limit is set very high, beyond what you’d likely find in a list.  If you set the row limit too low, your query will not gather all items from the List.  However, one thing you must also do is go to the View you’re using and set the Item Limit to the maximum allowed (2147483647, or a smaller number that will work for you).  If the Item Limit is too low, again, you will not see all results in your query.
 

@@ -8,7 +8,7 @@ paginate_path: "page:num"
 
 # Setup
 title:               The SharePoint Farm
-description:         'Blah blah...'
+description:         'The SharePoint Farm'
 url:                 https://thesharepointfarm.github.io/
 baseurl:             ''
 paginate:            3

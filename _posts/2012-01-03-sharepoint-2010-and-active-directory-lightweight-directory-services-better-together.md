@@ -252,7 +252,7 @@ Attempt to sign in with the AD LDS account, using the mail attribute:
 
 If the AD LDS account is logged in, you have successfully set up SharePoint 2010 with Active Directory Lightweight Directory Services!
 
-![image55](/assets/images/2012/01/image55.png)
+![image55-e1400646474633](/assets/images/2012/01/image55-e1400646474633.png)
 
 If you see an error similar to the below in the Application Event Viewer, double-check each and every web.config for typos or mis-configurations.
 

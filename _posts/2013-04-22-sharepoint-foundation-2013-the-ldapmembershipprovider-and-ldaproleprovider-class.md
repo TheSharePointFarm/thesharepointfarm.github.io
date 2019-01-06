@@ -1,0 +1,28 @@
+---
+layout: post
+title: SharePoint Foundation 2013, the LdapMembershipProvider and LdapRoleProvider Class
+tags: [ad-lds,sp2013]
+---
+
+SharePoint Foundation 2013 ships with the dll that provides the `Microsoft.Office.Server.Security.LdapMembershipProvider` and `Microsoft.Office.Server.Security.LdapRoleProvider` classes.  Yay! Right?  Let's find out...
+
+When properly configured for LDAP, be that Active Directory, AD LDS, OpenLDAP, and so forth, we start seeing these really weird errors in the ULS log in addition to getting a general error in SharePoint when we attempt to hit a Web Application configured for FBA using Microsoft's provider.
+
+```csharp
+SharePoint Foundation General 8nca	Medium  	Application error when access /, Error=Common Language Runtime detected an invalid program.   at Microsoft.Office.Server.Security.LdapMembershipProvider.get_Name()     at System.Configuration.Provider.ProviderCollection.Add(ProviderBase provider)     at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)     at System.Web.Security.Membership.InitializeSettings(Boolean initializeGeneralSettings, RuntimeConfig appConfig, MembershipSection settings)     at System.Web.Security.Membership.Initialize()     at System.Web.Security.Membership.get_Provider()     at Microsoft.SharePoint.ApplicationRuntime.SPHeaderManager.AddIsapiHeaders(HttpContext context, String encodedUrl, NameValueCollection hea...	786e149c-2433-409e-efe3-4cbff17c1f9f
+SharePoint Foundation General 8nca	Medium  	...ders)     at Microsoft.SharePoint.ApplicationRuntime.SPRequestModule.PreRequestExecuteAppHandler(Object oSender, EventArgs ea)     at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()     at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)	786e149c-2433-409e-efe3-4cbff17c1f9f
+SharePoint Foundation Runtime tkau	Unexpected	System.InvalidProgramException: Common Language Runtime detected an invalid program.    at Microsoft.Office.Server.Security.LdapMembershipProvider.get_Name()     at System.Configuration.Provider.ProviderCollection.Add(ProviderBase provider)     at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)     at System.Web.Security.Membership.InitializeSettings(Boolean initializeGeneralSettings, RuntimeConfig appConfig, MembershipSection settings)     at System.Web.Security.Membership.Initialize()     at System.Web.Security.Membership.get_Provider()     at Microsoft.SharePoint.ApplicationRuntime.SPHeaderManager.AddIsapiHeaders(HttpContext context, String encodedUrl, NameValueCollection headers) ...	786e149c-2433-409e-efe3-4cbff17c1f9f
+SharePoint Foundation Runtime tkau	Unexpected	...    at Microsoft.SharePoint.ApplicationRuntime.SPRequestModule.PreRequestExecuteAppHandler(Object oSender, EventArgs ea)     at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()     at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)	786e149c-2433-409e-efe3-4cbff17c1f9f
+SharePoint Foundation General ajlz0	High    	Getting Error Message for Exception System.InvalidProgramException: Common Language Runtime detected an invalid program.     at Microsoft.Office.Server.Security.LdapMembershipProvider.get_Name()     at System.Configuration.Provider.ProviderCollection.Add(ProviderBase provider)     at System.Web.Configuration.ProvidersHelper.InstantiateProviders(ProviderSettingsCollection configProviders, ProviderCollection providers, Type providerType)     at System.Web.Security.Membership.InitializeSettings(Boolean initializeGeneralSettings, RuntimeConfig appConfig, MembershipSection settings)     at System.Web.Security.Membership.Initialize()     at System.Web.Security.Membership.get_Provider()     at Microsoft.SharePoint.ApplicationRuntime.SPHeaderManager.AddIsapiHeaders(HttpContext context, String enco...	786e149c-2433-409e-efe3-4cbff17c1f9f
+SharePoint Foundation General ajlz0	High    	...dedUrl, NameValueCollection headers)     at Microsoft.SharePoint.ApplicationRuntime.SPRequestModule.PreRequestExecuteAppHandler(Object oSender, EventArgs ea)     at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()     at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)	786e149c-2433-409e-efe3-4cbff17c1f9f
+```
+
+In addition, there is an ASP.NET Warning in the Application Event Log with an identical error.  Why would we be getting an error of "Common Language Runtime detected an invalid program"?  Well, glad you asked!
+
+When your `LdapMembershipProvider` class looks like this...
+
+![FoundationLdapProvider](/assets/images/2013/04/FoundationLdapProvider.png)
+
+...It is no wonder we get that error.  Microsoft has specifically stripped out the code within the methods that provide the logic behind the `Microsoft.Office.Server.Security.LdapMembershipProvider` and `LdapRoleProvider`!
+
+What does this mean to you?  It means you have to build an alternate provider.  I do have a [provider for SharePoint Foundation 2010](http://sharepointadlds.codeplex.com/releases) that mimics the Microsoft provider, however the source needs to have it's reference updated to for SharePoint 2013 (Microsoft.SharePoint.dll) and simply recompiled.

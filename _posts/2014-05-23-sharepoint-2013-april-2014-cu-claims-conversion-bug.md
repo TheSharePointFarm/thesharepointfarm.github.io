@@ -6,7 +6,7 @@ tags: [sp2013]
 
 6/11/2014 Update:
 
-This bug is resolved in the June 2014 Cumulative Update.
+This bug is resolved in the [June 2014 Cumulative Update](2014-06-10-sharepoint-2013-june-2014-cumulative-updates).
 
 -------------
 

@@ -57,3 +57,6 @@
 
 - slug: sql
   name: SQL Server
+
+- slug: wfm
+- name: Workflow Manager

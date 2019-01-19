@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using MIM to Export Attributes from SharePoint 2016
-tags: [sp2016]
+tags: [sp2016,mim]
 ---
 
 **Microsoft Identity Manager Series**

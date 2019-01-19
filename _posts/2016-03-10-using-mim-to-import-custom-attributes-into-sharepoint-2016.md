@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using MIM to Import Custom Attributes into SharePoint 2016
-tags: [sp2016]
+tags: [sp2016,mim]
 ---
 
 # Microsoft Identity Manager Series

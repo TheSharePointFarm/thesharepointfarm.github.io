@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Basic MIM Configuration to Support SharePoint 2016
-tags: [sp2016]
+tags: [sp2016,mim]
 ---
 
 # Microsoft Identity Manager Series

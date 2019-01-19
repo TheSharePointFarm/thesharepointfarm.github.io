@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 
-tags: [sp2016]
+tags: [sp2016,mim]
 ---
 
 # Microsoft Identity Manager Series

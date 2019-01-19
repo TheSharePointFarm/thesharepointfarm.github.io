@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Default MIM to SharePoint 2016 Attribute Mappings
-tags: [sp2016]
+tags: [sp2016,mim]
 ---
 
 # Microsoft Identity Manager Series

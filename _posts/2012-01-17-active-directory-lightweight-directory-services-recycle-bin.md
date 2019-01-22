@@ -31,7 +31,7 @@ Now, delete a user via ADSI Edit (or any other method).  Next, from an elevated 
 
 Next, under Connection, Connect, then Bind as an Administrative user to the AD LDS instance.  Finally, under the View menu, show the Tree of the Domain BaseDN.  There is a new container for Deleted Objects:
 
-![image10](/assets/images/2012/01/image10.png)
+![image10-e1400646610266](/assets/images/2012/01/image10-e1400646610266.png)
 
 Right click a Deleted object.  Add the Attribute “isDeleted” and under Operation select “Delete”, then click on Enter.  Next, add the Attribute “distinguishedName” and enter the full DN to where the object should be recovered to, change the Operation to “Replace” and click on Enter.  Select the Extended check box.  It should look similar to this:
 

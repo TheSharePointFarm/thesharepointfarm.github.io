@@ -9,7 +9,7 @@ Update 12/14/2011: This is resolved in the December 2011 Cumulative Update.
 ===
 If an end user attempts to upload a picture to their own profile via their profile in My Sites, they will receive this error:
 
-![image3](/assets/2011/11/image3.png)
+![image3](/assets/images/2011/11/image3.png)
 
 There are some fairly significant code changes between the August 2011 CU version .5005 and the October 2011 CU.  For example, here is `LoadPictureLibraryInternal()` from `Microsoft.SharePoint.Portal.WebControls.ProfileImagePicture` from August:
 

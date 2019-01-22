@@ -6,7 +6,7 @@ tags: [sp2010]
 
 If you have a SharePoint Server with PowerShell v3 (part of the Windows Management Framework 3.0) installed on it and wish to use PowerShell Remoting in order to manage SharePoint 2010, you may find that the remoting session lands you in the .NET 4.0 Framework, which is incompatible with SharePoint 2010.  it looks like this:
 
-![PSRemotingNotSupported](/assets/images/2013/04/02/PSRemotingNotSupported.png)
+![PSRemotingNotSupported](/assets/images/2013/03/PSRemotingNotSupported.png)
 
 To resolve this, on the SharePoint server, run:
 

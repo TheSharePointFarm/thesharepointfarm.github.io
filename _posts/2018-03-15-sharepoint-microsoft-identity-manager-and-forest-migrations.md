@@ -107,7 +107,7 @@ The end result looks like this.
 
 The last item to change in the Management Agent is to add the attribute flow. Under Configure Attribute Flow, add a new flow for the user to person object type as shown in the screenshot. Don't forget to hit the New button after selecting the attribute flow, otherwise it will not be recreated.
 
-![attributeflow](/assets/iamges/2018/03/attributeflow.png)
+![attributeflow](/assets/images/2018/03/attributeflow.png)
 
 Repeat these steps for the other AD MA. Remember the flow direction is identical for both MAs; that is we are going from the Data Source Attribute -> Metaverse Attribute.
 

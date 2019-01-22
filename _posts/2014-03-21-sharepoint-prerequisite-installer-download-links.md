@@ -14,11 +14,11 @@ strings.exe -u X:\prerequisiteinstaller.exe | findstr http://go
 
 The result is:
 
-![strings](/assets/images/2014/02/strings.png)
+![strings](/assets/images/2014/03/strings.png)
 
 Alternatively, execute the `prerequisiteinstaller.exe`. On an unsupported Operating System (e.g., Windows 8) it will report that the tool does not support the current operating system. That's OK, just leave it running. Next, run Process Explorer "As Administrator" and find `prerequisiteinstaller.exe` in the Process list. Right click and go to Properties (or double-click), then select the Strings tab. Make sure the Image button is selected, and search for "http://go". All of the download links are grouped into this single section of the image.
 
-![psexplorer](/assets/images/2014/02/psexplorer.png)
+![psexplorer](/assets/images/2014/03/psexplorer.png)
 
 Alternatively, you can save the strings to text and search the text file.
 

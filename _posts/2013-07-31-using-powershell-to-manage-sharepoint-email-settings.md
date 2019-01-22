@@ -25,7 +25,7 @@ $list.Update()
 
 Here are the various settings you can apply.  I’ll be translating from the SharePoint UI to the PowerShell property.
 
-![EmailLibrary](/assets/images/2013/07/EmailLibrary.png)
+![EmailLibrary](/assets/images/2013/07/EmailLibrary.jpg)
 
 E-mail address (note this also sets Allow this document library to receive e-mail?)
 

@@ -5,12 +5,18 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p>{{ site.description }}</p>
+    <p><!--<h1>{{ site.description }}</h1>--></p>
   </div>
 
   <nav class="sidebar-nav">
+    <p class="blocktext"><a href="https://mvp.microsoft.com/en-us/PublicProfile/4039997"><img src="/assets/images/2014/04/MVP2013.png"></a></p>
     <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
 
+    <a class="sidebar-nav-item" href="{{ site.author.url }}">GitHub Repos</a>
+    <a class="sidebar-nav-item" href="https://sharepointupdates.com">SharePoint Updates</a>
+    <a class="sidebar-nav-item" href="https://sharepointring.com">SharePoint Ring</a>
+    <a class="sidebar-nav-item" href="{{ site.url/search/ }}">Search</a>
+    <a class="sidebar-nav-item" href="{{ site.url/more-resources/ }}">More Resources</a>
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
       `layout: page` in the front-matter. See readme for usage.
@@ -24,11 +30,6 @@
         {% endif %}
       {% endif %}
     {% endfor %}
-
-    <a class="sidebar-nav-item" href="microsoft-identity-manager-series">MIM Series</a>
-    <a class="sidebar-nav-item" href="{{ site.author.url }}">GitHub Repos</a>
-    <a class="sidebar-nav-item" href="https://sharepointupdates.com">SharePoint Updates</a>
-    <a class="sidebar-nav-item" href="https://sharepointring.com">SharePoint Ring</a>
   </nav>
 
   <div class="sidebar-item">

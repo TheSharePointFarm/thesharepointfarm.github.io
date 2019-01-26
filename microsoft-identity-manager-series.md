@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Microsoft Identity Manager Series
+title: Microsoft Identity Manager
 tags: [mim]
 ---
 

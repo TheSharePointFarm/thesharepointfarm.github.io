@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Flow Button for SharePoint Server 2019
+title: A Flow Button for SharePoint Server 2019
 tags: [sp2019]
 ---
 

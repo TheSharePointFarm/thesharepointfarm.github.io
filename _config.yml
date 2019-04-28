@@ -11,7 +11,6 @@ title:               The SharePoint Farm
 description:         'The SharePoint Farm'
 url:                 https://thesharepointfarm.com/
 baseurl:             ''
-paginate:            3
 
 # About/contact
 author:

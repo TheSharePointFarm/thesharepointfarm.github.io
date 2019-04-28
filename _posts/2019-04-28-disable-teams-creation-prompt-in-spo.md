@@ -26,3 +26,5 @@ Set-PnPPropertyBagValue -Key 'TeamifyHidden' -Value 'True'
 ```
 
 The first portion of the above script verifies that `DenyAndAddCustomizePages` is disabled on the site. This enables us to set a property bag value of `TeamifyHidden` to `true`. If you refresh the homepage after setting the value, the dialog box to create Teams should no longer appear.
+
+At the time of writing, there is no current method to disable this tenant-wide. It must be disabled on a Site Collection by Site Collection basis.

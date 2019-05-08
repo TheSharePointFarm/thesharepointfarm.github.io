@@ -41,7 +41,7 @@ And again, this is unsupported by Microsoft. After experimenting, you can disabl
 
 ```powershell
 $farm = Get-SPFarm
-$farm.Properties.Remove()
-$farm.Properties.Remove()
+$farm.Properties.Remove("GuestSharingEnabled")
+$farm.Properties.Remove("SPO-GuestSharingUIEnabled")
 $farm.Update()
 ```

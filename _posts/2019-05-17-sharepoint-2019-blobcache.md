@@ -10,15 +10,15 @@ If you're unfamiliar with this solution, it is a full trust solution that provid
 
 When you go to Manage Web Applications, a new BLOB cache button will be in the ribbon:
 
-![bc-button](/assets/images/2019/05/bc-button.png)
+![bc-button](/assets/images/2019/05/bc-button.PNG)
 
 You can then edit a variety of BLOB cache settings:
 
-![bc-settings1](/assets/images/2019/05/bc-settings1.png)
+![bc-settings1](/assets/images/2019/05/bc-settings1.PNG)
 
 Including flushing the BLOB cache and restoring the BLOB cache settings to their defaults (which will also disable BLOB cache since that's also a default).
 
-![bc-settings2](/assets/images/2019/05/bc-settings2.png)
+![bc-settings2](/assets/images/2019/05/bc-settings2.PNG)
 
 Make sure you plan on a mini-outage to make any BLOB cache settings change. As changing anything in the web.config by hand or through automated means recycles the IIS Application Pool in use by the IIS site, there will be a brief outage as you save these settings.
 

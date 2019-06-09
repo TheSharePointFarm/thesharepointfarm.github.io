@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: fid
 title: SharePoint Server 2010 Feature IDs
 ---
 

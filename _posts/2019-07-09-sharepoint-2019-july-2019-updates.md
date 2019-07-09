@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SharePoint 2019 Juily 2019 Updates
+title: SharePoint 2019 July 2019 Updates
 tags: [sp2019]
 ---
 

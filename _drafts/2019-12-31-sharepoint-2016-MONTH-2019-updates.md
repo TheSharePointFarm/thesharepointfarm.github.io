@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SharePoint 2016 MONTH Updates
+title: SharePoint 2016 MONTH 2019 Updates
 tags: [sp2016]
 ---
 

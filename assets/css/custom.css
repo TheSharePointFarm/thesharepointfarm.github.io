@@ -3,3 +3,14 @@ P.blocktext {
     margin-right: auto;
     width: 8em
 }
+
+.image-container {
+    display:flex;
+    align-items:center;
+    flex-direction: row;
+  }
+
+  .txt-container {
+    padding-left: 20px;
+    font-size: small;
+  }

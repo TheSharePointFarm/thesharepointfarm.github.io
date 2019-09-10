@@ -49,6 +49,9 @@
 - slug: spo
   name: SharePoint Online
 
+- slug: teams
+  name: Microsoft Teams
+
 - slug: vnext
   name: SharePoint vNext
 

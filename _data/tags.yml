@@ -4,6 +4,9 @@
 - slug: development
   name: Development
 
+- slug: edge
+  name: Edge
+
 - slug: mim
   name: Microsoft Identity Manager
 
@@ -63,6 +66,3 @@
 
 - slug: wfm
 - name: Workflow Manager
-
-- slug: edge
-- name: Edge

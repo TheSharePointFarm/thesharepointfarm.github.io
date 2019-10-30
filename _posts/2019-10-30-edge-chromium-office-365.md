@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Microsoft Edge Chromium Integrates with Office 365
-tags: [edge,office365]
+tags: [edge, office-365]
 ---
 
 [Microsoft Edge Chromium](https://www.microsoftedgeinsider.com/) is the newest browser from Microsoft. Currently in development, Edge Chromium has a brand new feature in the Canary release that integrates with Azure AD and Office 365. If you log into your computer with an Azure AD account, Edge Chromium will automatically detect and sign you into Edge with your Azure AD account.

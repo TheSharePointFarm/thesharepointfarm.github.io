@@ -9,7 +9,7 @@ paginate_path: "page:num"
 # Setup
 title:               The SharePoint Farm
 description:         'The SharePoint Farm'
-url:                 https://thesharepointfarm.com/
+url:                 https://thesharepointfarm.com
 baseurl:             ''
 
 # About/contact

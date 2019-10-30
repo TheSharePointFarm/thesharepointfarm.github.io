@@ -63,3 +63,6 @@
 
 - slug: wfm
 - name: Workflow Manager
+
+- slug: edge
+- name: Edge

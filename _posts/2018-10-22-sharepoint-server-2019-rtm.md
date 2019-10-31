@@ -8,7 +8,7 @@ SharePoint Server 2019 has RTM'ed today! This is a big release bringing many of 
 
 * Modern Team sites and Communication sites
 * SharePoint Home
-* # and % characters supported in file names
+* \# and % characters supported in file names
 * 400 character path limit
 * 15GB maximum file size support
 * OneDrive Next-Gen Sync Client support for OneDrive sites and document libraries

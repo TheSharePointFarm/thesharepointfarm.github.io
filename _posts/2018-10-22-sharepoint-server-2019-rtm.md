@@ -25,7 +25,7 @@ There are also a four new PowerShell cmdlets and one new switch to an existing c
 
 `Set-SPApplicationCredentialKey` and `Remove-SPApplicationCredentialKey` replace `stsadm.exe -o setapppassword`.
 
-`Clear-SPContentDatabaseSyncData` and `Update-SPProfileSyn`c replace `stsadm.exe -o sync`.
+`Clear-SPContentDatabaseSyncData` and `Update-SPProfileSync` replace `stsadm.exe -o sync`.
 
 Finally, `Get-SPContentDatabase` has a new switch, `-DaysSinceLastProfileSync` which also replaces `stsadm.exe -o sync`.
 

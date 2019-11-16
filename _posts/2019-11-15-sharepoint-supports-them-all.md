@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SQL Server - Let's Support Them All!
-tags: [sp2019]
+tags: [sp2016,sp2019]
 ---
 
 A major change is taking place with how the SharePoint product group supports SQL Server with SharePoint Server -- namely, support will be defined by the database compatibility levels rather than a specific version of SQL Server. This allows customers to deploy SharePoint Server 2019 with SQL Server 2016, 2017, 2019, and beyond as long as SQL Server supports the database compatibility level 130.

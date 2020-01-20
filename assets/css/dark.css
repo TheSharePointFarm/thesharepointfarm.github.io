@@ -1,0 +1,23 @@
+:root {
+  --color: #f0ece2;
+  --sidebar-a: #f0ece2;
+  --page-title: #f0ece2;
+  --background-color: #333333;
+  --table-color: rgb(15, 15, 15);
+  --table-cell-color: #3c4245;
+  --table-cell-border: #3c4245;
+  --image-filter: grayscale(50%);
+  --cell-hover-color: #3c4245;
+ /* --dark-mode-toggle-icon-size: 32px;
+  --icon-filter: invert(100%);
+  --icon-filter_hover: invert(40%);
+  --shadow-color: rgba(240, 240, 240, 0.5); 
+}
+
+
+img:not([src*=".svg"]) {
+  filter: var(--image-filter);
+}
+
+*/
+}

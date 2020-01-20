@@ -2,6 +2,9 @@
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="">
+  <link rel="icon" content="">
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -22,6 +25,7 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/solarized-dark.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css">
+
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/apple-touch-icon-precomposed.png">
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon.png">
@@ -31,12 +35,48 @@
 
   <!-- JS -->
   <script type="text/javascript">
+
+  if (location.hostname === "localhost" || location.hostname === "127.0.0.1" || location.hostname === "")
+  {
+    console.log("localhost");
+  } else {
     var appInsights=window.appInsights||function(a){
-        function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+    function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var
+    c={config:a},d=document,e=window;setTimeout(function(){var
+    b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var
+    f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var
+    g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
     }({
-        instrumentationKey: "aca586ca-2811-4381-999e-de6bc27b41ef"
+    instrumentationKey: "aca586ca-2811-4381-999e-de6bc27b41ef"
     });
 
     window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+  }
 </script>
+
+<!-- Media query JS -->
+
+    <script>
+      // If `prefers-color-scheme` is not supported, fall back to light mode.
+      // In this case, light.css will be downloaded with `highest` priority.
+      if (window.matchMedia('(prefers-color-scheme)').media === 'not all') {
+        document.documentElement.style.display = 'none';
+        document.head.insertAdjacentHTML(
+          'beforeend',
+          '<link rel="stylesheet" href="light.css" onload="document.documentElement.style.display = ``">'
+        );
+      }
+    </script>
+
+<!--
+  Conditionally either load the light or the dark stylesheet. The matching file
+  will be downloaded with `highest`, the non-matching file with `lowest`
+  priority. If the browser doesn't support `prefers-color-scheme`, the media
+  query is unknown and the files are downloaded with `lowest` priority (but
+  above I already force `highest` priority for my default light experience).
+-->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/dark.css" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+  <!--<script type="module" src="{{ site.baseurl }}/assets/scripts/dark-mode-toggle.mjs"></script>-->
+  <script type="module" src="{{ site.baseurl }}/assets/scripts/dark-mode-toggle.min.mjs"></script>
 </head>

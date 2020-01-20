@@ -1,3 +1,10 @@
+:root {
+  color-scheme: light dark;
+  --duration: 0.5s;
+  --timing: ease;
+  --shadow-color: #FFFFFF;
+}
+
 P.blocktext {
     margin-left: auto;
     margin-right: auto;
@@ -10,7 +17,45 @@ P.blocktext {
     flex-direction: row;
   }
 
-  .txt-container {
-    padding-left: 20px;
-    font-size: small;
-  }
+.txt-container {
+  padding-left: 20px;
+  font-size: small;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  transition: filter var(--duration) var(--timing);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+dark-mode-toggle {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  --dark-mode-toggle-light-icon: url(/assets/moon.png);
+  --dark-mode-toggle-dark-icon: url(/assets/sun.png);
+  --dark-mode-toggle-icon-size: 2rem;
+  --dark-mode-toggle-icon-filter: invert(100%);
+  transform:translate3d(0, 0, 0);
+}
+
+fieldset {
+  border: solid 0.1rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem var(--shadow-color);
+  transition: box-shadow var(--duration) var(--timing);
+}
+
+body {
+    -webkit-transform: translate3d(0, 0, 0);
+    color: var(--color);
+    background-color: var(--background-color);
+
+    transition: color var(--duration) var(--timing),
+    background-color var(--duration) var(--timing);
+}

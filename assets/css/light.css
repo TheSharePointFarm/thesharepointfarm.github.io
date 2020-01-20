@@ -1,0 +1,12 @@
+:root {
+  --color: rgb(5, 5, 5);
+  --sidebar-a: #f0ece2;
+  --page-title: rgb(5, 5, 5);
+  --background-color: rgb(250, 250, 250);
+  --table-color: rgb(15, 15, 15);
+  --table-cell-color: #f9f9f9;
+  --table-cell-border: #e5e5e5;
+  --cell-hover-color: #e5e5e5;
+  --dark-mode-toggle-icon-size: 32px;
+ /*--icon-filter_hover: invert(60%);*/
+}

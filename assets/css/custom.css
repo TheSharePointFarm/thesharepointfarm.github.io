@@ -38,8 +38,8 @@ dark-mode-toggle {
   position: absolute;
   top: 0.5rem;
   right: 1rem;
-  --dark-mode-toggle-light-icon: url(/assets/moon.png);
-  --dark-mode-toggle-dark-icon: url(/assets/sun.png);
+  --dark-mode-toggle-light-icon: url(/assets/moon.svg);
+  --dark-mode-toggle-dark-icon: url(/assets/sun.svg);
   --dark-mode-toggle-icon-size: 2rem;
   --dark-mode-toggle-icon-filter: invert(100%);
   transform:translate3d(0, 0, 0);

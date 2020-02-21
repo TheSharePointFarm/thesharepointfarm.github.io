@@ -31,11 +31,23 @@ Using Internet Explorer 11 on Windows 8.1 Update 1 and navigating to the Report 
 
 Here is the raw data for the run on SP05:
 
-<iframe width="515" height="180" scrolling="no" src="https://onedrive.live.com/embed?cid=CBCE97C71A32BCAE&amp;resid=CBCE97C71A32BCAE%2120403&amp;authkey=&amp;em=2&amp;wdAllowInteractivity=False&amp;Item=Table1&amp;wdHideGridlines=True" frameborder="0"></iframe>
+| InstanceName|TimeDataRetrieval|TimeProcessing|TimeRendering|
+|-------------|-----------------|--------------|-------------|
+|SP05\@Sharepoint|103|6|844|
+|SP05\@Sharepoint|99|7|1055|
+|SP05\@Sharepoint|99|20|1071|
+|SP05\@Sharepoint|103|8|462|
+|SP05\@Sharepoint|98|6|1252|
 
 Next, the reverse test is performed, starting SSRS on SP04, the Low Latency tier, and stopping SSRS on SP05, the Batch tier.
 
-<iframe width="515" height="180" scrolling="no" src="https://onedrive.live.com/embed?cid=CBCE97C71A32BCAE&amp;resid=CBCE97C71A32BCAE%2120403&amp;authkey=&amp;em=2&amp;wdAllowInteractivity=False&amp;Item=Table2&amp;wdHideGridlines=True" frameborder="0"></iframe>
+| InstanceName|TimeDataRetrieval|TimeProcessing|TimeRendering|
+|-------------|-----------------|--------------|-------------|
+|SP04\@Sharepoint|118|6|710|
+|SP04\@Sharepoint|102|6|632|
+|SP04\@Sharepoint|115|9|421|
+|SP04\@Sharepoint|98|8|566|
+|SP04\@Sharepoint|102|7|543|
 
 When SP04 is running SSRS, there is an average reduction in render times of roughly half a second, or 936.8 ms on SP05 versus 574.4 ms on SP04, a difference of 362.4 ms. While this number may not appear to be significant, the Report rendering time feels much faster with SSRS running on SP04. And how a page feels is extremely important for the end user!
 

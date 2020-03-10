@@ -1,7 +1,7 @@
 ---
 layout: post
 title: March 2020 Update Provides SameSite Cookie Compatibility with Chrome
-tags: [sp2019]
+tags: [sp2010,sp2013,sp2016,sp2019]
 ---
 
 The Chromium (thus Google Chrome and Microsoft Edge Chromium) introduced changes to cookie security handling. These changes known as the [SameSite Update](https://www.chromium.org/updates/same-site) may impact web applications, such as SharePoint and Office 365. While Office 365 was previously addressed by Microsoft, the March 2020 updates for SharePoint 2010 through SharePoint Server 2016 address the SameSite behavior for SharePoint on-premises. SharePoint Server 2019 was previously addressed in the February 2020 Public Update.

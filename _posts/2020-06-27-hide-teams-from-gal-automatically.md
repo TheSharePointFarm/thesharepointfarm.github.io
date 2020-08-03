@@ -58,9 +58,9 @@ try {
     $token = $oauth.access_token
 
     # Note we're using a _beta_ endpoint! Update to 1.0 when this API is updated.
-    $Uri = "https://graph.microsoft.com/beta/groups/$($groupId)?`$select=hideFromOutlookClients"
+    $Uri = "https://graph.microsoft.com/beta/groups/$($groupId)?`$select=hideFromAddressLists"
     $Header = @{"Authorization" = "Bearer $token"}
-    $Body = @{hideFromOutlookClients = 'true'}
+    $Body = @{hideFromAddressLists = 'true'}
     $ApiBody = ConvertTo-Json -InputObject $Body
 
     Invoke-RestMethod -Uri $Uri -Method PATCH -Headers $Header -Body $ApiBody -ContentType "application/json"

@@ -76,9 +76,20 @@ a {
   color: #268bd2;
   text-decoration: none;
 }
+/*
 a strong {
   color: inherit;
 }
+*/
+/* Blog post or page title */
+
+a strong,
+a em,
+p strong,
+p em {
+  color: var(--page-title);
+}
+
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {

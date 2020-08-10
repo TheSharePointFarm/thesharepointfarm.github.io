@@ -4,7 +4,7 @@ title:
 tags: [office-365, spo, teams]
 ---
 
-Orchestry is a mix of governance and management tool. It doesn't have _reporting_ capabilities, such as ShareGate, AvePoint Cloud Governance, or a few others, but instead focuses on self-service governance -- enforcing standards and processes for provisioning sites and Teams.
+[Orchestry](https://www.orchestry.com/) is a mix of governance and management tool. It doesn't have _reporting_ capabilities, such as ShareGate, AvePoint Cloud Governance, or a few others, but instead focuses on self-service governance -- enforcing standards and processes for provisioning sites and Teams.
 
 Orchestry setup is quite easy, navigate to https://app.orchestry.com and follow the prompts. You will need Global Administrator rights as you will be confirming quite a few Graph API permissions. Fill in a few fields about yourself and the company, then you're good to go while the service provisions into your tenant. Orchestry will automatically provision a new Communication site at /sites/orchestry within your tenant to store assets and the site directory.
 

@@ -61,7 +61,7 @@ E-mail security policy:
 
 ```powershell
 $list.RootFolder.Properties.Add("vti_emailusesecurity", 1) #1 = true - Use Document Library Permissions, 0 = false - Allow All/Anonymous
-``
+```
 
 To disable Incoming Email on a Library, simply run:
 

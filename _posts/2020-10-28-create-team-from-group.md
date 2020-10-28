@@ -36,7 +36,7 @@ $body =
     "allowStickersAndMemes": true,
     "allowCustomMemes": true
   }
-}' #define the options for the Team. See link below for available options
+}' #define the options for the Team. See below for available options
 Invoke-MgGraphRequest -Method PUT -Uri https://graph.microsoft.com/v1.0/groups/<M365GroupId>/team -ContentType "application/json" -Body $body #Create the Team
 ```
 

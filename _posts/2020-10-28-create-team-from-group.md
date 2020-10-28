@@ -66,7 +66,7 @@ internalId                     19:48a42ce16238439dbe1fb02ba8e8288d@thread.tacv2
 And that's it! To see the available Team options you can set in the `$body` variable, you can execute a GET request on the Team.
 
 ```powershell
-Invoke-MgGraphRequest -Method GET -Uri https://graph.microsoft.com/v1.0/teams/057697b5-57f8-4f1d-8b87-7347faa91cf6
+$team = Invoke-MgGraphRequest -Method GET -Uri https://graph.microsoft.com/v1.0/teams/057697b5-57f8-4f1d-8b87-7347faa91cf6
 $team.guestSettings
 $team.messagingSettings
 #and so on...

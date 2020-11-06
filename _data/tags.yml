@@ -19,6 +19,9 @@
 - slug: office-365
   name: Microsoft 365
 
+- slug: microsoft-365-apps
+  name: Microsoft 365 Apps
+
 - slug: oos
   name: Office Online Server
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SharePoint PnP Provisioning with Azure Logic Apps and Azure Automation
-tags: [spo, teams, azure]
+tags: [spo,teams]
 ---
 
 This guide will walk you through provisioning of SharePoint Online modern sites using the Graph API for permissions. The overall process is:

@@ -1,6 +1,9 @@
 - slug: ad-lds
   name: AD LDS
 
+- slug: azure
+- name: Azure
+
 - slug: development
   name: Development
 

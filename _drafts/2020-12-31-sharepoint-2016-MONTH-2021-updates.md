@@ -1,10 +1,10 @@
 ---
 layout: post
-title: SharePoint 2016 MONTH 2020 Updates
+title: SharePoint 2016 MONTH 2021 Updates
 tags: [sp2016]
 ---
 
-The SharePoint 2016 MONTH 2020 Updates have been released.
+The SharePoint 2016 MONTH 2021 Updates have been released.
 
 |Product | KB Article |
 |:--- |--- |

@@ -1,6 +1,5 @@
 <head>
   <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="color-scheme" content="dark light">
   <meta name="theme-color" content="">
@@ -18,13 +17,13 @@
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/poole.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/syntax.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/lanyon.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/social.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/solarized-dark.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/poole.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/syntax.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/lanyon.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/social.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/solarized-dark.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/custom.css">
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/apple-touch-icon-precomposed.png">
@@ -32,26 +31,6 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.baseurl }}/atom.xml">
-
-  <!-- JS -->
-  <script type="text/javascript">
-    if (location.hostname === "localhost" || location.hostname === "127.0.0.1" || location.hostname === "")
-    {
-      console.log("localhost");
-    } else {
-      var appInsights=window.appInsights||function(a){
-      function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var
-      c={config:a},d=document,e=window;setTimeout(function(){var
-      b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var
-      f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var
-      g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
-      }({
-      instrumentationKey: "aca586ca-2811-4381-999e-de6bc27b41ef"
-      });
-
-      window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
-    }
-  </script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18649744-1"></script>
@@ -86,8 +65,8 @@
   query is unknown and the files are downloaded with `lowest` priority (but
   above I already force `highest` priority for my default light experience).
 -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/dark.css" media="(prefers-color-scheme: dark)">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/dark.css" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
   <!--<script type="module" src="{{ site.baseurl }}/assets/scripts/dark-mode-toggle.mjs"></script>-->
   <script type="module" src="{{ site.baseurl }}/assets/scripts/dark-mode-toggle.min.mjs"></script>
 </head>

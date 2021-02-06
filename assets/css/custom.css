@@ -52,10 +52,9 @@ fieldset {
 }
 
 body {
-    -webkit-transform: translate3d(0, 0, 0);
+    /*-webkit-transform: translate3d(0, 0, 0);*/
     color: var(--color);
     background-color: var(--background-color);
-
     transition: color var(--duration) var(--timing),
     background-color var(--duration) var(--timing);
 }

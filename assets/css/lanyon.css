@@ -206,13 +206,13 @@ a.sidebar-nav-item:focus {
 
 /* Hide the sidebar checkbox that we toggle with `.sidebar-toggle` */
 .sidebar-checkbox {
-  /*
+  
   position: absolute;
   opacity: 0;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-          */
+          
     display: none;
 }
 
@@ -238,12 +238,6 @@ a.sidebar-nav-item:focus {
   width: 1rem;
   height: .75rem;
   content: "";
-  /*
-  background-image: -webkit-linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
-  background-image:    -moz-linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
-  background-image:     -ms-linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
-  background-image:         linear-gradient(to bottom, #555, #555 20%, #fff 20%, #fff 40%, #555 40%, #555 60%, #fff 60%, #fff 80%, #555 80%, #555 100%);
-*/
   background-image: -webkit-linear-gradient(to bottom, #fafafa, #fafafa 20%, #008083 20%, #008083 40%, #fafafa 40%, #fafafa 60%, #008083 60%, #008083 80%, #fafafa 80%, #fafafa 100%);
   background-image: -moz-linear-gradient(to bottom, #fafafa, #fafafa 20%, #008083 20%, #008083 40%, #fafafa 40%, #fafafa 60%, #008083 60%, #008083 80%, #fafafa 80%, #fafafa 100%);
   background-image: -ms-linear-gradient(to bottom, #fafafa, #fafafa 20%, #008083 20%, #008083 40%, #fafafa 40%, #fafafa 60%, #008083 60%, #008083 80%, #fafafa 80%, #fafafa 100%);
@@ -265,16 +259,10 @@ a.sidebar-nav-item:focus {
 .sidebar-toggle:active:before,
 #sidebar-checkbox:focus ~ .sidebar-toggle:before,
 #sidebar-checkbox:checked ~ .sidebar-toggle:before {
-  /*
-  background-image: -webkit-linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
-  background-image:    -moz-linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
-  background-image:     -ms-linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
-  background-image:         linear-gradient(to bottom, #fff, #fff 20%, #555 20%, #555 40%, #fff 40%, #fff 60%, #555 60%, #555 80%, #fff 80%, #fff 100%);
-*/
-    background-image: -webkit-linear-gradient(to bottom, #008083, #008083 20%, #fafafa 20%, #fafafa 40%, #008083 40%, #008083 60%, #fafafa 60%, #fafafa 80%, #008083 80%, #008083 100%);
-    background-image: -moz-linear-gradient(to bottom, #008083, #008083 20%, #fafafa 20%, #fafafa 40%, #008083 40%, #008083 60%, #fafafa 60%, #fafafa 80%, #008083 80%, #008083 100%);
-    background-image: -ms-linear-gradient(to bottom, #008083, #008083 20%, #fafafa 20%, #fafafa 40%, #008083 40%, #008083 60%, #fafafa 60%, #fafafa 80%, #008083 80%, #008083 100%);
-    background-image: linear-gradient(to bottom, #008083, #008083 20%, #fafafa 20%, #fafafa 40%, #008083 40%, #008083 60%, #fafafa 60%, #fafafa 80%, #008083 80%, #008083 100%);
+  background-image: -webkit-linear-gradient(to bottom, #008083, #008083 20%, #fafafa 20%, #fafafa 40%, #008083 40%, #008083 60%, #fafafa 60%, #fafafa 80%, #008083 80%, #008083 100%);
+  background-image: -moz-linear-gradient(to bottom, #008083, #008083 20%, #fafafa 20%, #fafafa 40%, #008083 40%, #008083 60%, #fafafa 60%, #fafafa 80%, #008083 80%, #008083 100%);
+  background-image: -ms-linear-gradient(to bottom, #008083, #008083 20%, #fafafa 20%, #fafafa 40%, #008083 40%, #008083 60%, #fafafa 60%, #fafafa 80%, #008083 80%, #008083 100%);
+  background-image: linear-gradient(to bottom, #008083, #008083 20%, #fafafa 20%, #fafafa 40%, #008083 40%, #008083 60%, #fafafa 60%, #fafafa 80%, #008083 80%, #008083 100%);
 }
 
 @media (min-width: 30.1em) {
@@ -471,110 +459,6 @@ a.pagination-item:hover {
  * Based on colors from Base16: http://chriskempson.github.io/base16/#default.
  */
 
-/* Red */
-.theme-base-08 .sidebar,
-.theme-base-08 .sidebar-toggle:active,
-.theme-base-08 #sidebar-checkbox:checked ~ .sidebar-toggle,
-.theme-base-08 .search-submit {
-  background-color: #ac4142;
-}
-.theme-base-08 .container a,
-.theme-base-08 .sidebar-toggle,
-.theme-base-08 .related-posts li a:hover {
-  color: #ac4142;
-}
-
-/* Orange */
-.theme-base-09 .sidebar,
-.theme-base-09 .sidebar-toggle:active,
-.theme-base-09 #sidebar-checkbox:checked ~ .sidebar-toggle,
-.theme-base-09 .search-submit {
-  background-color: #d28445;
-}
-.theme-base-09 .container a,
-.theme-base-09 .sidebar-toggle,
-.theme-base-09 .related-posts li a:hover {
-  color: #d28445;
-}
-
-/* Yellow */
-.theme-base-0a .sidebar,
-.theme-base-0a .sidebar-toggle:active,
-.theme-base-0a #sidebar-checkbox:checked ~ .sidebar-toggle,
-.theme-base-0a .search-submit {
-  background-color: #f4bf75;
-}
-.theme-base-0a .container a,
-.theme-base-0a .sidebar-toggle,
-.theme-base-0a .related-posts li a:hover {
-  color: #f4bf75;
-}
-
-/* Green */
-.theme-base-0b .sidebar,
-.theme-base-0b .sidebar-toggle:active,
-.theme-base-0b #sidebar-checkbox:checked ~ .sidebar-toggle,
-.theme-base-0b .search-submit {
-  background-color: #90a959;
-}
-.theme-base-0b .container a,
-.theme-base-0b .sidebar-toggle,
-.theme-base-0b .related-posts li a:hover {
-  color: #90a959;
-}
-
-/* Cyan */
-.theme-base-0c .sidebar,
-.theme-base-0c .sidebar-toggle:active,
-.theme-base-0c #sidebar-checkbox:checked ~ .sidebar-toggle,
-.theme-base-0c .search-submit {
-  background-color: #75b5aa;
-}
-.theme-base-0c .container a,
-.theme-base-0c .sidebar-toggle,
-.theme-base-0c .related-posts li a:hover {
-  color: #75b5aa;
-}
-
-/* Blue */
-.theme-base-0d .sidebar,
-.theme-base-0d .sidebar-toggle:active,
-.theme-base-0d #sidebar-checkbox:checked ~ .sidebar-toggle,
-.theme-base-0d .search-submit {
-  background-color: #6a9fb5;
-}
-.theme-base-0d .container a,
-.theme-base-0d .sidebar-toggle,
-.theme-base-0d .related-posts li a:hover {
-  color: #6a9fb5;
-}
-
-/* Magenta */
-.theme-base-0e .sidebar,
-.theme-base-0e .sidebar-toggle:active,
-.theme-base-0e #sidebar-checkbox:checked ~ .sidebar-toggle,
-.theme-base-0e .search-submit {
-  background-color: #aa759f;
-}
-.theme-base-0e .container a,
-.theme-base-0e .sidebar-toggle,
-.theme-base-0e .related-posts li a:hover {
-  color: #aa759f;
-}
-
-/* Brown */
-.theme-base-0f .sidebar,
-.theme-base-0f .sidebar-toggle:active,
-.theme-base-0f #sidebar-checkbox:checked ~ .sidebar-toggle,
-.theme-base-0f .search-submit {
-  background-color: #8f5536;
-}
-.theme-base-0f .container a,
-.theme-base-0f .sidebar-toggle,
-.theme-base-0f .related-posts li a:hover {
-  color: #8f5536;
-}
-
 /* Custom */
 .theme-custom .sidebar,
 .theme-custom .sidebar-toggle:active,
@@ -582,6 +466,7 @@ a.pagination-item:hover {
 .theme-custom .search-submit {
   background-color: #008083;
 }
+
 .theme-custom .container a,
 .theme-custom .sidebar-toggle,
 .theme-custom .related-posts li a:hover {

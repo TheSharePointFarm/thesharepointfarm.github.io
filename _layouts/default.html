@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body class="theme-custom">
+  <body class="theme-custom sidebar-overlay">
 
     {% include sidebar.html %}
 
@@ -13,9 +13,13 @@
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+            <p style="width:60% !important; display: contents !important;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>&nbsp;|&nbsp;
+            <a href="/search/" title="Search">Search</a>&nbsp;|&nbsp;
+            <a href="https://github.com/tseward" title="GitHub" rel="noopener noreferrer" target="_blank">GitHub</a>&nbsp;|&nbsp;
+            <a href="/about/" title="About">About the Author</a>&nbsp;&nbsp;
+            <dark-mode-toggle permanent appearance="toggle" class="lightdarkiconmin"></dark-mode-toggle></p>
           </h3>
-          <dark-mode-toggle permanent appearance="toggle"></dark-mode-toggle>
         </div>
       </div>
 

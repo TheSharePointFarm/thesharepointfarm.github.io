@@ -15,7 +15,7 @@ baseurl:             ''
 # About/contact
 author:
   name:              Trevor Seward
-  url:               https://github.com/Nauplius
+  url:               https://github.com/tseward
 
 # Custom vars
 version:             1.0.0

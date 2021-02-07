@@ -1,6 +1,7 @@
 <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
      styles, `#sidebar-checkbox` for behavior. -->
-     <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+     <!-- {% if page.title =="Home" %}checked{% endif %}-->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
@@ -25,9 +26,7 @@
         {% endif %}
       {% endif %}
     {% endfor %}
-    <a class="sidebar-nav-item" href="/search/">Search</a>
     <a class="sidebar-nav-item" href="/more-resources/">More Resources</a>
-    <a class="sidebar-nav-item" href="{{ site.author.url }}">GitHub Repos</a>
     <a class="sidebar-nav-item" href="https://sharepointupdates.com" rel="noopener noreferrer" target="_blank">SharePoint Updates</a>
     <a class="sidebar-nav-item" href="https://sharepointring.com" rel="noopener noreferrer" target="_blank">SharePoint Ring</a>
   </nav>

@@ -58,3 +58,9 @@ body {
     transition: color var(--duration) var(--timing),
     background-color var(--duration) var(--timing);
 }
+
+@media only screen and (max-width: 750px) {
+  .lightdarkiconmin {
+    display: none;
+  }
+}
